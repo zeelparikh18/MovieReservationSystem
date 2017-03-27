@@ -1,0 +1,176 @@
+
+.h-center {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.v-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+#app {
+    margin: 0 auto;
+    width: 650px;
+}
+
+th{
+    color: #58646B;
+}
+
+button{
+    cursor: pointer;
+}
+
+.reservationForm {
+    background: lightblue;
+    border-radius: 4px;
+    box-shadow: 0 0 0.4rem 0 rgba(220, 220, 224, 1);
+    display: inline-block;
+    padding: 40px 30px;
+    width: 300px;
+}
+
+.reservationForm label {
+    color: #58646B;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reservationForm button {
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+}
+
+.formHeader{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.formElement {
+    margin-bottom: 20px;
+}
+
+.formInput {
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 30px;
+    padding: 3px 5px;
+    width: 100%;
+}
+
+.formInput:focus {
+    outline: none;
+}
+
+.formSelect {
+    height: 30px;
+    width: 100%;
+}
+
+.selectionContainer {
+    margin-bottom: 30px;
+}
+
+.screen {
+    background: #14CBAE;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.reservationGrid {
+    margin: 20px auto;
+}
+
+.reservationGrid tr td:nth-child(6) .seat{
+    margin-right: 30px;
+}
+
+.reservationGrid tr td:nth-child(7) .seat{
+    margin-left: 30px;
+}
+
+.reservationGrid tr:nth-child(6) .seat{
+    margin-bottom: 30px;
+}
+
+.reservationGrid tr:nth-child(7) .seat{
+    margin-top: 30px;
+}
+
+.seat {
+    border: 1px solid #14CBAE;
+    border-radius: 3px;
+    height: 20px;
+    margin: 10px;
+    width: 20px;
+}
+
+.seat:hover {
+    background: #14CBAE;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background: #14CBAE;
+}
+
+.seat.disabled {
+    background: lightgrey;
+    border: none;
+    cursor: not-allowed;
+}
+
+.buttonGroup{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seatSelectionBtn {
+    height: 30px;
+    width: 200px;
+}
+
+.booked{
+    background: #14CBAE;
+    border: none;
+    color: white;
+    cursor: default;
+}
+
+.reservedSeatsContainer.noReservedSeats {
+    background: aliceblue;
+    height: 200px;
+}
+
+.noSeatsReserved{
+    color: #58646B;
+    text-align: center;
+}
+
+.reservationInfoTable {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.reservationInfoTable td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.reservationInfoTable th {
+    border: 1px solid grey;
+    padding: 5px;
+}
