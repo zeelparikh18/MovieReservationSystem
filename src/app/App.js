@@ -51,10 +51,10 @@ class App extends PureComponent {
     };
   }
 
-  // saving name and number of seats
+  // saving name, seat class and number of seats
   handleFormSave = ({name,numOfSeats,seatClass}) => this.setState({ name, numOfSeats, seatClass, selected: true });
 
-  // return to the landing page
+  // return to the landing page (form)
   handleBookAnother = () => this.setState({ selected: false, numOfSeats: 1, seatsSelected: false });
 
   //saving the seats which are selected.
@@ -78,16 +78,12 @@ class App extends PureComponent {
 
   render() {
     const that = this,
-      state = that.state;
-    return state.selected ?
+      {selected, ...stateToPass} = that.state;
+    return selected ?
       <SeatSelectionPage
-        numOfSeats={state.numOfSeats}
-        seatClass={state.seatClass}
+        {...stateToPass}
         onSeatClick={that.handleSeatClick}
         onSeatsSelection={that.handleSeatsSelection}
-        reservationSeats={state.reservationSeats}
-        currentSelection={state.currentSelection}
-        seatsSelected={state.seatsSelected}
         onBookAnother={that.handleBookAnother}
       /> :
       <ReservationForm

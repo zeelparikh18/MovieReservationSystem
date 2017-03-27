@@ -6,4 +6,7 @@ Lets you select seats as per the number of seats filled in the initial form.
   - user cannot select a seat which has already been reserved or which does not belong to the class that he has selected.
   
   
-Data is stored in localStorage and displayed below the seat reservatiion page.
+Data is stored in localStorage and displayed below the seat reservation page.
+
+### demo:
+![demo](demo.gif)

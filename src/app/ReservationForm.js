@@ -18,7 +18,7 @@ class ReservationForm extends PureComponent {
     onSave: PropTypes.func
   };
 
-  handleClick = e => {
+  handleClick = () => {
     const name = this.refs.inputName.value,
       numOfSeats = this.refs.numOfSeats.value,
       seatClass = this.refs.seatClass.value;
